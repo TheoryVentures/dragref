@@ -1,5 +1,7 @@
-import { createMockDataTransfer } from "@dragref/core/testing";
+// @vitest-environment jsdom
+
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { createMockDataTransfer } from "dragref/testing";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { Draggable, useDragSource } from "./index";
 

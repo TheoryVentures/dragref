@@ -15,7 +15,7 @@ export default function Home() {
         </li>
         <li>
           <Link href="/library">Library</Link>: the same references rendered through{" "}
-          <code>@dragref/react</code>.
+          <code>dragref/react</code>.
         </li>
       </ul>
     </section>
