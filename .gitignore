@@ -1,0 +1,17 @@
+node_modules/
+.next/
+dist/
+out/
+.build/
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+.env*.local
+
+# Research harness (local only)
+docs/research/
+tools/
+apps/playground/src/lab/
+apps/playground/src/app/lab/
+apps/playground/src/app/inspect/
+apps/playground/src/app/api/drop-log/
