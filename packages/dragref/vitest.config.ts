@@ -6,8 +6,8 @@ const src = (file: string) => fileURLToPath(new URL(`./src/${file}`, import.meta
 export default defineConfig({
   resolve: {
     alias: [
-      { find: "dragref/testing", replacement: src("testing.ts") },
-      { find: /^dragref$/, replacement: src("index.ts") },
+      { find: "@adamconway/dragref/testing", replacement: src("testing.ts") },
+      { find: /^@adamconway\/dragref$/, replacement: src("index.ts") },
     ],
   },
   test: {

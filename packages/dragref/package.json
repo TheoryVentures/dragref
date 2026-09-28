@@ -1,6 +1,6 @@
 {
-  "name": "dragref",
-  "version": "0.1.0",
+  "name": "@adamconway/dragref",
+  "version": "0.1.0-alpha.0",
   "description": "Drag references (and optional JSON or files) out of a web page into AI clients like Claude, Cursor, and ChatGPT.",
   "keywords": [
     "drag-and-drop",
@@ -62,6 +62,9 @@
       }
     },
     "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "engines": {
     "node": ">=18"

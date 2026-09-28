@@ -1,7 +1,7 @@
 "use client";
 
-import { buildReferenceUrl, type DragReference } from "dragref";
-import { Draggable, useDragSource } from "dragref/react";
+import { buildReferenceUrl, type DragReference } from "@adamconway/dragref";
+import { Draggable, useDragSource } from "@adamconway/dragref/react";
 import { type DragEvent, useState } from "react";
 import { SAMPLE_JSON } from "@/lib/sample-data";
 

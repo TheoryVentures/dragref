@@ -16,7 +16,7 @@ export default defineConfig([
   {
     ...shared,
     entry: { react: "src/react/index.ts" },
-    external: ["react", "dragref"],
+    external: ["react", "@adamconway/dragref"],
     // Lets Next.js App Router server components import these client components directly.
     banner: { js: '"use client";' },
   },

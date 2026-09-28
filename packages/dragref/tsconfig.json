@@ -3,8 +3,8 @@
   "compilerOptions": {
     "noEmit": true,
     "paths": {
-      "dragref": ["./src/index.ts"],
-      "dragref/testing": ["./src/testing.ts"]
+      "@adamconway/dragref": ["./src/index.ts"],
+      "@adamconway/dragref/testing": ["./src/testing.ts"]
     }
   },
   "include": ["src", "tsup.config.ts", "vitest.config.ts"]

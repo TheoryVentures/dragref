@@ -1,4 +1,4 @@
-import { type ApplyOptions, type DragReference, handleDragStart } from "dragref";
+import { type ApplyOptions, type DragReference, handleDragStart } from "@adamconway/dragref";
 import type { DragEvent } from "react";
 
 export type DragReferenceInput =

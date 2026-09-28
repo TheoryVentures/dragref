@@ -17,7 +17,7 @@ importers:
 
   apps/playground:
     dependencies:
-      dragref:
+      '@adamconway/dragref':
         specifier: workspace:*
         version: link:../../packages/dragref
       next:

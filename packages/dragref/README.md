@@ -4,13 +4,16 @@ Make anything in your web app draggable into AI clients. Drop a company card int
 it arrives as a clean `[Acme Corp](https://app.example.com/...)` link the model can read and fetch.
 
 ```sh
-npm install dragref
+npm install @adamconway/dragref@next
 ```
+
+dragref is in alpha. Prereleases publish under the `next` tag, and minor versions may break the API
+until `1.0`.
 
 ## Quick start (React / Next.js)
 
 ```tsx
-import { Draggable } from "dragref/react";
+import { Draggable } from "@adamconway/dragref/react";
 
 export function CompanyCard({ company }) {
   return (
@@ -21,7 +24,7 @@ export function CompanyCard({ company }) {
 }
 ```
 
-`dragref/react` ships with a `"use client"` directive, so App Router server components can render
+`@adamconway/dragref/react` ships with a `"use client"` directive, so App Router server components can render
 `Draggable` directly.
 
 ## What a drag carries
@@ -53,7 +56,7 @@ from a web page. Other clients and browsers are untested so far.
 
 ## API
 
-### `dragref/react`
+### `@adamconway/dragref/react`
 
 **`<Draggable reference as? plainText? dataMimeType? disabled? {...htmlProps}>`**
 
@@ -71,7 +74,7 @@ return <tr {...source}>...</tr>;
 `reference` may be a `DragReference`, `null`/`undefined` (drag is cancelled), or a function returning
 either, which is called at drag time.
 
-### `dragref`
+### `@adamconway/dragref`
 
 ```ts
 type DragReference = {
@@ -99,7 +102,7 @@ type ApplyOptions = {
 Plain DOM:
 
 ```ts
-import { handleDragStart } from "dragref";
+import { handleDragStart } from "@adamconway/dragref";
 
 el.draggable = true;
 el.addEventListener("dragstart", (event) =>
@@ -107,7 +110,7 @@ el.addEventListener("dragstart", (event) =>
 );
 ```
 
-### `dragref/testing`
+### `@adamconway/dragref/testing`
 
 **`createMockDataTransfer(seed?)`** returns a `Map`-backed `DataTransfer` for jsdom and Node tests:
 
